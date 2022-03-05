@@ -1,0 +1,86 @@
+% 作者: 厦门大学数学系 刘轼波, liusb@xmu.edu.cn
+
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage[hmargin={55pt,55pt},vmargin={65pt,88pt}]{geometry}
+% 如果申请书正文上传到基金委网站后生成的NSFC申请书正文版芯太宽太高,
+% 这样会导致页眉和页脚和标书正文重叠的现象.
+% 那么, 可以调整上述的 hmargin 和 vmargin 的参数, 改变这个TeX文件生成的PDF文件的
+% 水平和垂直页边距, 来避免上述问题.
+\usepackage{amsthm,bm,ctex}
+\usepackage{nsfc}
+
+%以下是关于数学字体的设置, 用户可以自行根据自己喜好选择数学字体
+
+\usepackage[T1]{fontenc}
+\usepackage{txfonts,amsmath,esint}
+\DeclareSymbolFont{CM}{OMX}{cmex}{m}{n}
+\DeclareMathSymbol{\sumop}{\mathop}{CM}{"50}
+\renewcommand{\sum}{\sumop}
+
+\AtBeginDocument{\input head.tex}
+
+\renewcommand{\refname}{}
+\bibliographystyle{siam}
+
+\begin{document}
+
+\Ai
+
+项目的立项依据~(这是新的版本, 字体大小比较合适)
+
+这是用~BibTeX 插入参考文献的例子: \cite{MR3843290}.
+
+立项依据与研究内容结束, 以下是用~BibTeX 自动生成的的参考文献. 不熟悉~BibTeX 的用户也可以用通常的~\texttt{thebibliography} 环境手工输入参考文献.
+
+\subsection*{参考文献}\vspace{-1.8cm}
+\bibliography{ref}
+
+\Aii
+
+项目的研究内容
+
+\Aiii
+
+拟采取的研究方案
+
+\Aiv
+
+本项目的特色
+
+\Av
+
+年度研究计划
+
+\Bi
+
+研究基础
+
+\Bii
+
+工作条件
+
+\Biii
+
+正在承担的项目
+
+\Biv
+
+完成项目情况
+
+\Ci
+
+同年申请的项目情况
+
+\Cii
+
+申请单位不一致
+
+\Ciii
+
+承担单位不一致
+
+\Civ
+
+其他
+
+\end{document} 
